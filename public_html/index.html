@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>¬¬</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+
         <!--Importar a biblioteca do jQuery-->
         <script src="js/jquery-3.2.1.js"></script>
         <!--Importar a biblioteca Pooper-->
@@ -13,9 +13,95 @@
         <script src="js/bootstrap.js"></script>
         <!--Importar o CSS do Bootstrap-->
         <link rel="stylesheet" href="css/bootstrap.css" />
-        
+
     </head>
     <body>
-        <div>TODO write content</div>
+        <!--Definindo Container do Bootstrap, dividindo em 3 linhas-->
+        <div class="container">
+
+            <!--Primeira linha definida como MENU (TOPO)-->
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-light bg-light justify-content-between">
+                        <a class="navbar-brand">Pague bem barato PontoCom</a>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+
+            <!--Segunda linha divida em 2 colunas-->
+            <div class="row">
+
+                <!--Coluna de Categorias-->
+                <div class="col-3">
+                    <h4>Categorias</h4>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item active">Condicionador de Ar</a>
+                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                        <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                        <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                        <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+                    </div>
+                </div>
+
+                <!--Coluna de conteúdo principal-->
+                <div class="col-9"><table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!--Terceira coluna divida em 3 colunas-->
+            <div class="row">
+
+                <!--Coluna de departamentos-->
+                <div class="col">
+                    <h5>Departamentos</h5>
+                </div>
+
+                <!--Coluna de minha conta-->
+                <div class="col">
+                    <h5>Minha conta</h5>
+
+                    <a href="#" class="btn btn-secondary">Login</a>
+                </div>
+
+                <!--Coluna de atendimento-->
+                <div class="col">
+                    <h5>Atendimento</h5>
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
