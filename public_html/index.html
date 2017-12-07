@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>¬¬</title>
+        <title>O seu melhor site de compras!</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,7 +12,31 @@
         <!--Importar a biblioteca do Bootstrap-->
         <script src="js/bootstrap.js"></script>
         <!--Importar o CSS do Bootstrap-->
-        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+        <!--Importar o font awesome para usar ícones -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <style>
+            .container{
+                background: #EEEEEE;
+            }
+            .card{
+                margin-right: 25px;
+                margin-bottom: 25px;
+                text-align: center;
+                font-size: 13px;
+
+            }
+            .imagem{
+                text-align: center;
+                width: 220px;
+            }
+            .card-body{
+                text-align: justify;
+            }
+
+        </style>
 
     </head>
     <body>
@@ -21,87 +45,157 @@
 
             <!--Primeira linha definida como MENU (TOPO)-->
             <div class="row">
+
+                <a class="navbar-brand" style=" margin-bottom: 10px;" href="index.html">
+                    <img class="card-img-top" src="imagens/banner.jpg" alt="Card image cap" style=" margin-left: 15px; width: 1110px;">
+                </a>
+
                 <div class="col">
-                    <nav class="navbar navbar-light bg-light justify-content-between">
-                        <a class="navbar-brand">Pague bem barato PontoCom</a>
+                    <nav class="navbar navbar-light bg-light justify-content-between" style=" margin-bottom: 15px;">
+                        <div class="row">
+                            <h4>
+                                <a class="nav-link active" href="login.html">
+                                    <i class="fa fa-user" aria-hidden="true"> Login</i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="row">
+                            <h3>
+                                <a class="nav-link active" href="carrinho.html">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"> Carrinho</i>
+                                </a>
+                            </h3>
+                        </div>
+                        <div class="row">
+                            <h3>
+                                <a class="nav-link active" href="">
+                                    <i class="fa fa-audio-description" aria-hidden="true"></i>
+                                </a>
+                            </h3>
+                        </div>
+
+
                         <form class="form-inline">
-                            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            <input class="form-control mr-sm-2" type="text" placeholder="Sua pesquisa aqui..." aria-label="Search">                            
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
                         </form>
                     </nav>
                 </div>
             </div>
 
             <!--Segunda linha divida em 2 colunas-->
-            <div class="row">
+            <div class="row">                
 
                 <!--Coluna de Categorias-->
-                <div class="col-3">
-                    <h4>Categorias</h4>
+                <div class="col-md-3">
                     <div class="list-group">
-                        <a href="#" class="list-group-item active">Condicionador de Ar</a>
-                        <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-                        <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-                        <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-                        <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+                        <a class="list-group-item active"><h4>Categorias</h4></a>
+                        <a href="smarthphone.html" class="list-group-item list-group-item-action">Smartphone</a>
+                        <a href="" class="list-group-item list-group-item-action">TV´s e Áudio</a>
+                        <a href="" class="list-group-item list-group-item-action">Informática</a>
+                        <a href="" class="list-group-item list-group-item-action">Acessórios</a>
                     </div>
                 </div>
 
                 <!--Coluna de conteúdo principal-->
-                <div class="col-9"><table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Username</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="col-md-9">
+
+                    <div class="card" style="width: 250px; height: 30rem; float: left;">
+                        <div class="imagem">
+                            <img class="card-img-top" src="imagens/smartphone.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Smartphone Samsung Galaxy S8
+                            </h4>
+                            <p class="card-text">
+                                Smartphone Samsung Galaxy S8 Plus G955FD
+                                Octa Core 2.3Ghz, Android 7.0, Tela 6.2, 64GB,
+                                12MP Dual Pixel, 4G, Desbl - Ametista  
+                            </p>
+                            <h5>
+                                R$ 999,00
+                            </h5>
+                            <br/>
+                            <a href="smarthphone.html" class="btn btn-dark ">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 250px; height: 30rem; float: left;">
+                        <div class="imagem">
+                            <img class="card-img-top" src="imagens/processador.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Processador AMD Ryzen 7 1700 3.0GHz Octa Core
+                            </h4>
+                            <p class="card-text">
+                                Processador AMD Ryzen 7 1700 c/ Wraith Spire, 
+                                Octa Core, Cache 20MB, 3.0GHz (3.7GHz Max Turbo)
+                                AM4 YD1700BBAEBOX  
+
+                            </p>
+                            <h5>
+                                R$ 279,00
+                            </h5>
+                            <br/>
+                            <a href="" class="btn btn-dark ">Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 250px; height: 30rem; float: left;">
+                        <div class="imagem">
+                            <img class="card-img-top" src="imagens/tv.jpg" alt="Card image cap">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                Smart TV LG 98" 4K
+                            </h4>
+                            <p class="card-text">
+                                Smart TV LG 98" LED Ultra HD 4K 3D Display LED Plus
+                                Painel IPS WebOS 3 USB 4 HDMI 98UB9800 
+                            </p>
+                            <h5>R$ 4.399,00 <span class="badge badge-success">79% OFF</span></h5>
+                            <br/>
+                            <a href="" class="btn btn-dark ">Comprar</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!--Rodapé-->
+            <div style=" background: #EEEEEE" >
+                <div class="row">
+                    <div class="col">
+                        <h4>
+                            Institucional  
+                        </h4>
 
-            <!--Terceira coluna divida em 3 colunas-->
-            <div class="row">
+                    </div>
+                    <div class="col">
+                        <h6>
+                            <i class="fa fa-copyright" aria-hidden="true"></i> Diego Nicácio 
+                        </h6>                               
 
-                <!--Coluna de departamentos-->
-                <div class="col">
-                    <h5>Departamentos</h5>
+                    </div>
+                    <div>
+                        <h4>
+                            Formas de Pagamento
+                            <h5>
+                                <div class="col">
+                                    <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                                    <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                                    <i class="fa fa-cc-diners-club" aria-hidden="true"></i>
+                                    <i class="fa fa-cc-mastercard" aria-hidden="true"></i>  
+                                    <i class="fa fa-cc-amex" aria-hidden="true"></i>
+                                    <i class="fa fa-cc-discover" aria-hidden="true"></i>
+                                    <i class="fa fa-btc" aria-hidden="true"></i>
+                                </div>
+                            </h5>
+                        </h4>
+                    </div>
                 </div>
 
-                <!--Coluna de minha conta-->
-                <div class="col">
-                    <h5>Minha conta</h5>
-
-                    <a href="#" class="btn btn-secondary">Login</a>
-                </div>
-
-                <!--Coluna de atendimento-->
-                <div class="col">
-                    <h5>Atendimento</h5>
-                </div>
             </div>
-        </div>
 
     </body>
 </html>
